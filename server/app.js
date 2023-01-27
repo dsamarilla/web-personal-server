@@ -9,7 +9,7 @@ const authRoutes = require("./router/auth");
 
 // configure body parser
 app.use(bodyparser.urlencoded({ extended: true }));
-app.use(bodyparser.json);
+app.use(bodyparser.json());
 // configure static folder
 app.use(express.static("uploads"));
 
